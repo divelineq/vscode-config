@@ -1,1 +1,1 @@
-# vscode-config
+`Настройки моего settings.json`
