@@ -1,98 +1,111 @@
 {
-	"react function component": {
-		"prefix": "rfc",
-		"body": [
-			"export default function ${TM_FILENAME_BASE}() {",
-			"	return (",
-			"		<div>",
-			"			<h1>${TM_FILENAME_BASE}</h1>$1",
-			"		</div>",
-			"	)",
-			"}",
-			""
-		],
-		"description": "react function component"
-	},
-	"fetch request snippet": {
-		"prefix": "ftc",
-		"body": [
-			"const response = fetch(\"$1\").then((response) => response.json());"
-		],
-		"description": "fetch request snippet"
-	},
-	"useEffect fetch snippet": {
-		"prefix": "ueftc",
-		"body": [
-			"useEffect$3(() => {",
-			"	const response = fetch('$1').then(",
-			"		(response) => response.json(),",
-			"	)",
-			"}, [$2])"
-		],
-		"description": "use effect fetch request snippet"
-	},
-	"useDipatch snippets": {
-		"prefix": "udp",
-		"body": ["const dispatch = useDispatch$1()"],
-		"description": "useDipatch snippets"
-	},
-	"useNavigate snippets": {
-		"prefix": "ung",
-		"body": ["const navigate = useNavigate$1()"],
-		"description": "useNavigate snippets"
-	},
-	"useSelector snippets": {
-		"prefix": "usl",
-		"body": ["const ${1:name} = useSelector$3((state) => state.$2)"],
-		"description": "useSelector snippets"
-	},
-	"useState snippets": {
-		"prefix": "ust",
-		"body": ["const [${1:name}, ${2:setName}] = useState($3)"],
-		"description": "useState snippets"
-	},
-	"configureStore snippets": {
-		"prefix": "cost",
-		"body": [
-			"import { configureStore } from '@reduxjs/toolkit'",
-			"",
-			"export default configureStore({",
-			"	reducer: {",
-			"		${1:name}: ${2:nameReducer}",
-			"	},",
-			"})"
-		],
-		"description": "configureStore snippets"
-	},
-	"createSlice snippets": {
-		"prefix": "crsl",
-		"body": [
-			"import { createSlice } from '@reduxjs/toolkit'",
-			"",
-			"export const ${TM_FILENAME_BASE} = createSlice({",
-			"	name: '${1:name}',",
-			"	initialState: {},",
-			"	reducers: {},",
-			"})",
-			"",
-			"export const { } = ${TM_FILENAME_BASE}.actions",
-			"export default ${TM_FILENAME_BASE}.reducer"
-		],
-		"description": "createSlice snippets"
-	},
-	"useForm snippets": {
-		"prefix": "ufo",
-		"body": [
-			"const { register, handleSubmit, formState } = useForm$1({",
-			"	mode: 'onChange',",
-			"	defaultValues: {},",
-			"})"
-		],
-		"description": "useForm snippets"
-	},
-	"useParams snippets": {
-		"prefix": "upa",
-		"body": ["let {${1:id}} = useParams$2();"],
-		"description": "useParams snippets"
-	}
+  "Компонент react": {
+    "prefix": "rfc",
+    "body": [
+      "interface Props {}",
+      "",
+      "function ${1:$TM_FILENAME_BASE} ({}: Props) {",
+      "  return ${0:null};",
+      "}",
+      "",
+      "export { ${1:$TM_FILENAME_BASE} };",
+    ],
+    "description": "Компонент react без доп. обёрток",
+    "isFileTemplate": true,
+  },
+  "Компонент, обёрнутый в mobx observer": {
+    "prefix": "rfco",
+    "body": [
+      "import { observer } from 'mobx-react-lite';",
+      "",
+      "interface Props {}",
+      "",
+      "const ${1:$TM_FILENAME_BASE} = observer<Props>(function ${1:$TM_FILENAME_BASE}() {",
+      "  return ${0:null};",
+      "});",
+      "",
+      "export { ${1:$TM_FILENAME_BASE} };",
+    ],
+    "description": "Компонент, обёрнутый в mobx observer",
+    "isFileTemplate": true,
+  },
+  "Компонент в mobx observer с generic параметром": {
+    "prefix": "rfcog",
+    "body": [
+      "import { observer } from 'mobx-react-lite';",
+      "",
+      "interface Props<${1:T} $2> {}",
+      "",
+      "const ${1:$TM_FILENAME_BASE} = observer(function ${1:$TM_FILENAME_BASE}<${1:T} $2>({}: Props<${1:T}>) {",
+      "  return ${0:null};",
+      "});",
+      "",
+      "export { ${1:$TM_FILENAME_BASE} };",
+    ],
+    "description": "Компонент, обёрнутый в mobx observer с generic параметром",
+    "isFileTemplate": true,
+  },
+  "Компонент, обёрнутый в memo": {
+    "prefix": "rfcm",
+    "body": [
+      "import { memo } from 'react';",
+      "",
+      "interface Props {}",
+      "",
+      "const ${1:$TM_FILENAME_BASE} = memo<Props>(function ${1:$TM_FILENAME_BASE}(props) {",
+      "  return ${0:null};",
+      "});",
+      "",
+      "export { ${1:$TM_FILENAME_BASE} };",
+    ],
+    "isFileTemplate": true,
+  },
+  "Компонент, обёрнутый в memo с generic параметром": {
+    "prefix": "rfcmg",
+    "body": [
+      "import { memo } from 'react';",
+      "",
+      "interface Props<${2:T}${3}> {}",
+      "",
+      "const ${1:$TM_FILENAME_BASE} = memo(function ${1:$TM_FILENAME_BASE}<${2:T}${3}>(props: Props<${2:T}>) {",
+      "  return ${0:null};",
+      "});",
+      "",
+      "export { ${1:$TM_FILENAME_BASE} };",
+    ],
+    "isFileTemplate": true,
+  },
+  "useState": {
+    "prefix": "us",
+    "body": ["const [$1, set${1/(.)/${1:/capitalize}/}] = useState($0);"],
+  },
+  "useMemo": {
+    "prefix": "um",
+    "body": ["const $1 = useMemo(() => $2, [$0]);"],
+  },
+  "useEffect": {
+    "prefix": "ue",
+    "body": ["useEffect(() => {", "$1", "}, [$0]);"],
+  },
+  "useCallback": {
+    "prefix": "uc",
+    "body": ["const $1 = useCallback(() => $2, [$0]);"],
+  },
+  "История для компонента": {
+    "prefix": "story",
+    "isFileTemplate": true,
+    "body": [
+      "import type { Meta, StoryObj } from \"@storybook/react\";",
+      "import { ${TM_FILENAME_BASE/(.*)\\..+$/$1/} } from \"./\";",
+      "",
+      "const meta: Meta<typeof ${TM_FILENAME_BASE/(.*)\\..+$/$1/}> = {",
+      "  component: ${TM_FILENAME_BASE/(.*)\\..+$/$1/},",
+      "};",
+      "",
+      "export default meta;",
+      "type Story = StoryObj<typeof ${TM_FILENAME_BASE/(.*)\\..+$/$1/}>;",
+      "",
+      "export const Default: Story = {};",
+    ],
+  },
 }
