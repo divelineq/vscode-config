@@ -1,179 +1,243 @@
 {
-  "files.exclude": {
-    "**/.git": true,
-    "**/.svn": true,
-    "**/.hg": true,
-    "**/CVS": true,
-    "**/.DS_Store": true,
-    "**/tmp": true,
-    "**/bower_components": true,
-    "/.classpath": true,
-    "/.factorypath": true,
-    "/.project": true,
-    "/.settings": true,
-  },
-  "files.watcherExclude": {
-    "/.git/objects/": true,
-    "/.git/subtree-cache/": true,
-    "/.hg/store/": true,
-    "**/.git/objects/**": true,
-    "**/.git/subtree-cache/**": true,
-    "**/tmp/**": true,
-    "**/bower_components/**": true,
-  },
-  "workbench.tree.enableStickyScroll": false,
-  "editor.stickyScroll.enabled": false,
-  "[javascript]": {
-    "editor.formatOnSave": true,
-    "editor.defaultFormatter": "biomejs.biome"
-  },
-  "[javascriptreact]": {
-    "editor.formatOnSave": true,
-    "editor.linkedEditing": true
-  },
-  "[typescript]": {
-    "editor.formatOnSave": true,
-    "editor.defaultFormatter": "biomejs.biome",
-  },
-  "[typescriptreact]": {
-    "editor.formatOnSave": true,
-    "editor.linkedEditing": true,
-    "editor.defaultFormatter": "biomejs.biome"
-  },
-  "cSpell.language": "en,ru",
-  "css.lint.unknownAtRules": "ignore",
-  "debug.openDebug": "openOnDebugBreak",
-  "editor.accessibilitySupport": "off",
-  "editor.autoClosingBrackets": "always",
-  "editor.codeActionsOnSave": {
-    "source.fixAll": "explicit",
-    "source.fixAll.eslint": "explicit",
-    "source.organizeImports": "explicit"
-  },
-  "typescript.preferences.importModuleSpecifier": "non-relative",
-  "typescript.preferences.includePackageJsonAutoImports": "on",
-  "editor.renderWhitespace": "none",
-  "workbench.startupEditor": "none",
-  "breadcrumbs.symbolPath": "off",
-  "window.openFilesInNewWindow": "off",
-  "window.density.editorTabHeight": "compact",
-  "terminal.integrated.gpuAcceleration": "off",
-  "typescript.tsserver.maxTsServerMemory": 5120,
-  "workbench.layoutControl.enabled": false,
-  "workbench.editor.editorActionsLocation": "hidden",
-  "editor.bracketPairColorization.enabled": false,
-  "editor.scrollbar.horizontal": "hidden",
-  "editor.scrollbar.vertical": "auto",
-  "editor.scrollbar.verticalScrollbarSize": 12,
-  "editor.scrollbar.horizontalScrollbarSize": 0,
-  "editor.cursorBlinking": "expand",
-  "editor.cursorStyle": "line-thin",
-  "editor.cursorSmoothCaretAnimation": "on",
-  "editor.folding": true,
-  "editor.fontFamily": "JetBrains Mono",
-  "editor.fontLigatures": false,
-  "editor.fontSize": 14.5,
-  "editor.codeLens": false,
-  "editor.formatOnSave": true,
-  "editor.linkedEditing": true,
-  "editor.suggestSelection": "first",
-  "editor.tabSize": 2,
-  "editor.unicodeHighlight.ambiguousCharacters": false,
-  "editor.wordWrap": "on",
-  "emmet.includeLanguages": {
-    "blade": "html",
-    "ejs": "html",
-    "javascript": "javascriptreact",
-    "mustache": "html"
-  },
-  "emmet.syntaxProfiles": {
-    "blade": "html",
-    "mustache": "html"
-  },
-  "editor.quickSuggestionsDelay": 0,
-  "editor.glyphMargin": false,
-  "explorer.confirmDelete": false,
-  "explorer.confirmDragAndDrop": false,
-  "explorer.enableDragAndDrop": true,
-  "explorer.incrementalNaming": "smart",
-  "extensions.ignoreRecommendations": false,
-  "files.autoSave": "off",
-  "files.eol": "\n",
-  "git.autofetch": true,
-  "git.confirmSync": false,
-  "html.format.enable": true,
-  "html.format.indentHandlebars": true,
-  "html.format.maxPreserveNewLines": 0,
-  "html.format.wrapAttributes": "aligned-multiple",
-  "html.format.wrapLineLength": 100,
-  "javascript.preferences.useAliasesForRenames": true,
-  "javascript.updateImportsOnFileMove.enabled": "always",
-  "material-icon-theme.activeIconPack": "react",
-  "notebook.cellToolbarLocation": {
-    "default": "right",
-    "jupyter-notebook": "left"
-  },
-  "security.workspace.trust.untrustedFiles": "open",
-  "telemetry.telemetryLevel": "off",
-  "terminal.integrated.defaultProfile.linux": "zsh",
-  "terminal.integrated.defaultProfile.windows": "zsh",
-  "terminal.integrated.profiles.linux": {
-    "bash": {
-      "icon": "terminal-bash",
-      "path": "bash"
-    },
-    "fish": {
-      "path": "fish"
-    },
-    "sh (2)": {
-      "path": "/usr/bin/sh"
-    },
-    "zsh": {
-      "path": "/usr/bin/zsh",
-      "args": [
-        "-l",
-        "-i"
-      ]
-    }
-  },
-  "typescript.preferences.useAliasesForRenames": false,
-  "typescript.updateImportsOnFileMove.enabled": "always",
-  "window.commandCenter": false,
-  "workbench.editor.empty.hint": "hidden",
-  "terminal.integrated.env.windows": {},
-  "editor.hover.delay": 600,
-  "git.replaceTagsWhenPull": true,
-  "explorer.confirmPasteNative": false,
-  "terminal.integrated.enableMultiLinePasteWarning": "never",
-  "workbench.tips.enabled": false,
-  "editor.minimap.enabled": false,
-  "workbench.activityBar.location": "top",
-  "workbench.colorTheme": "Adonis+ Eclipse",
-  "workbench.iconTheme": "helium-icon-theme",
-  "terminal.integrated.shellIntegration.enabled": true,
-  "terminal.integrated.defaultProfile.osx": "zsh",
-  "terminal.integrated.profiles.osx": {
-    "zsh": {
-      "path": "/bin/zsh",
-      "args": [
-        "-l"
-      ]
-    }
-  },
-  "terminal.integrated.fontSize": 16,
-  "terminal.integrated.suggest.enabled": true,
-  "gitlens.ai.model": "vscode",
-  "gitlens.ai.vscode.model": "copilot:gpt-3.5-turbo",
-  "biome.suggestInstallingGlobally": false,
-  "codeium.enableConfig": {
-    "*": true,
-    "properties": true
-  },
-  "workbench.colorCustomizations": {},
-  "window.titleBarStyle": "custom",
-  "vscode_vibrancy.disableFramelessWindow": true,
-  "vscode_vibrancy.opacity": 0.9,
-  "[html]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
+	"files.watcherExclude": {
+		"**/.git/**": true,
+		"**/node_modules/**": true,
+		"**/dist/**": true,
+		"**/build/**": true,
+		"**/.next/**": true,
+		"**/.turbo/**": true,
+		"**/.cache/**": true,
+		"**/.parcel-cache/**": true,
+		"**/.pnpm/**": true,
+		"**/coverage/**": true
+	},
+	"files.exclude": {
+		"**/.git": true,
+		"**/node_modules": true,
+		"**/dist": true,
+		"**/build": true,
+		"**/.next": true,
+		"**/.turbo": true,
+		"**/.cache": true,
+		"**/.parcel-cache": true,
+		"**/.pnpm": true,
+		"**/coverage": true
+	},
+	"search.exclude": {
+		"**/node_modules": true,
+		"**/dist": true,
+		"**/build": true,
+		"**/.next": true,
+		"**/.turbo": true,
+		"**/.cache": true,
+		"**/.parcel-cache": true,
+		"**/.pnpm": true,
+		"**/coverage": true
+	},
+	"eslint.enable": true,
+	"window.zoomLevel": -2,
+	"breadcrumbs.enabled": true, //? Убираем хлебные крошки сверху редактора
+	"editor.minimap.enabled": false, //? Выключаем миникарту справа
+	"editor.semanticHighlighting.enabled": true, //? Используем дорогую семантическую подсветку
+	"editor.bracketPairColorization.enabled": false, //? Не раскрашиваем скобки (экономия CPU)
+	"editor.guides.bracketPairs": false, //? Убираем линии соединяющие пары скобок
+	"editor.guides.indentation": false, //? Убираем вертикальные линии отступов
+	"editor.stickyScroll.enabled": false, //? Отключаем "прилипание" заголовков при скролле
+	"editor.codeLens": false, //? Не показываем дополнительные ссылки над кодом
+	"editor.inlayHints.enabled": "off", //? Отключаем маленькие типовые подсказки в коде
+	"editor.inlineSuggest.enabled": false, //? Отключаем inline-подсказки (ghost text)
+	"editor.occurrencesHighlight": "multiFile", //? Не подсвечиваем все вхождения переменной
+	"editor.parameterHints.enabled": false, //? Убираем всплывающие подсказки параметров функций
+	"editor.hover.delay": 500, //? Делаем задержку ховеров (меньше всплывашек = быстрее)
+	"editor.smoothScrolling": false, //? Выключаем плавный скроллинг (ускоряет рендер)
+	"editor.cursorSmoothCaretAnimation": "off", //? Убираем анимацию курсора
+	"workbench.list.smoothScrolling": false, //? Выключаем плавный скролл в списках (Explorer и т.д.)
+	"editor.glyphMargin": false, //? Не показываем слева пиктограммы (breakpoints, ошибки)
+	"problems.decorations.enabled": true, //? Убираем подсветку ошибок на линейке справа
+	"workbench.editor.enablePreview": true, //? Открываем файлы во временной вкладке, чтобы не копились сотни
+	// --- Git/SCM
+	"git.autofetch": false, //? Не подтягиваем изменения из git в фоне
+	"git.decorations.enabled": true, //? Не показываем маркеры изменений в Explorer
+	"git.untrackedChanges": "mixed", //? Прячем новые файлы в Explorer
+	"scm.diffDecorations": "all", //? Не подсвечиваем строки с изменениями в редакторе
+	// --- Терминал
+	"terminal.integrated.gpuAcceleration": "auto", //? Терминал без GPU — меньше нагрузка
+	"terminal.integrated.smoothScrolling": true, //? Терминал без плавного скролла — быстрее
+	// --- TypeScript/JS
+	"typescript.disableAutomaticTypeAcquisition": false, //? Не тянем тайпинги из сети автоматически (экономия)
+	"javascript.suggest.autoImports": true, //? Не ищем автоимпорты в node_modules (сильно нагружает)
+	"typescript.suggest.autoImports": true, //? То же самое для TS
+	"javascript.suggest.completeFunctionCalls": false, //? Не вставляем скобки при автодополнении функций
+	"typescript.suggest.completeFunctionCalls": false, //? То же самое для TS
+	"typescript.updateImportsOnFileMove.enabled": "always", //? Не обновляем импорты при переносе файлов (экономия)
+	"typescript.preferences.includePackageJsonAutoImports": "on", //? Ищем пакеты из package.json для автодополнения
+	"typescript.tsserver.watchOptions": {
+		//? Настраиваем watchers для уменьшения нагрузки
+		"watchFile": "useFsEventsOnParentDirectory", //? Используем события ОС вместо постоянного опроса
+		"watchDirectory": "useFsEvents", //? То же самое для папок
+		"fallbackPolling": "dynamicPriorityPolling" //? Если нет событий ОС — минимальный поллинг
+	},
+	// --- ESLint
+	"eslint.run": "onType", //? Проверяем код прямо при вводе
+	"eslint.validate": [
+		//? Валидируем все JS/TS файлы
+		"javascript",
+		"javascriptreact",
+		"typescript",
+		"typescriptreact"
+	],
+	"eslint.workingDirectories": [
+		{
+			"mode": "auto"
+		}
+	], //? Автоопределяем корень проекта для ESLint (важно в монорепах)
+	// --- Форматирование
+	"editor.formatOnSave": true, //? Fорматируем при сохранении
+	"editor.formatOnPaste": false, //? Не форматируем при вставке
+	"editor.formatOnType": false, //? Не форматируем при наборе текста
+	// --- Телеметрия и история
+	"telemetry.telemetryLevel": "off", //? Выключаем сбор статистики (меньше фоновых задач)
+	"workbench.localHistory.enable": false, //? Не ведём локальную историю файлов
+	"workbench.tree.enableStickyScroll": false,
+	"editor.acceptSuggestionOnTab": true,
+	"editor.tabCompletion": "on",
+	"emmet.triggerExpansionOnTab": true,
+	"[javascript]": {
+		"editor.formatOnSave": true,
+		"editor.defaultFormatter": "biomejs.biome"
+	},
+	"[javascriptreact]": {
+		"editor.formatOnSave": true,
+		"editor.linkedEditing": true
+	},
+	"[typescript]": {
+		"editor.formatOnSave": true,
+		"editor.defaultFormatter": "biomejs.biome"
+	},
+	"[typescriptreact]": {
+		"editor.formatOnSave": true,
+		"editor.linkedEditing": true,
+		"editor.defaultFormatter": "biomejs.biome"
+	},
+	"cSpell.language": "en,ru",
+	"css.lint.unknownAtRules": "ignore",
+	"debug.openDebug": "openOnDebugBreak",
+	"editor.accessibilitySupport": "off",
+	"editor.autoClosingBrackets": "always",
+	"editor.codeActionsOnSave": {
+		"source.fixAll": "explicit",
+		"source.fixAll.eslint": "explicit",
+		"source.organizeImports": "explicit"
+	},
+	"typescript.preferences.importModuleSpecifier": "non-relative",
+	"editor.renderWhitespace": "none",
+	"workbench.iconTheme": "material-icon-theme",
+	"workbench.startupEditor": "none",
+	"breadcrumbs.symbolPath": "off",
+	"window.openFilesInNewWindow": "off",
+	"window.density.editorTabHeight": "compact",
+	"typescript.tsserver.maxTsServerMemory": 2048,
+	"workbench.layoutControl.enabled": false,
+	"editor.scrollbar.horizontal": "hidden",
+	"editor.scrollbar.vertical": "auto",
+	"editor.scrollbar.verticalScrollbarSize": 12,
+	"editor.scrollbar.horizontalScrollbarSize": 0,
+	"editor.cursorBlinking": "expand",
+	"editor.cursorStyle": "line-thin",
+	"editor.folding": true,
+	"editor.fontFamily": "JetBrains Mono",
+	"editor.fontLigatures": false,
+	"editor.fontSize": 14,
+	"editor.linkedEditing": true,
+	"editor.suggestSelection": "first",
+	"editor.tabSize": 2,
+	"editor.unicodeHighlight.ambiguousCharacters": false,
+	"editor.wordWrap": "on",
+	"emmet.includeLanguages": {
+		"blade": "html",
+		"ejs": "html",
+		"javascript": "javascriptreact",
+		"mustache": "html"
+	},
+	"emmet.syntaxProfiles": {
+		"blade": "html",
+		"mustache": "html"
+	},
+	"editor.quickSuggestionsDelay": 100,
+	"explorer.confirmDelete": false,
+	"explorer.confirmDragAndDrop": false,
+	"explorer.enableDragAndDrop": true,
+	"explorer.incrementalNaming": "smart",
+	"extensions.ignoreRecommendations": false,
+	"files.autoSave": "off",
+	"files.eol": "\n",
+	"git.confirmSync": false,
+	"html.format.enable": true,
+	"html.format.indentHandlebars": true,
+	"html.format.maxPreserveNewLines": 0,
+	"html.format.wrapAttributes": "aligned-multiple",
+	"html.format.wrapLineLength": 100,
+	"javascript.preferences.useAliasesForRenames": true,
+	"notebook.cellToolbarLocation": {
+		"default": "right",
+		"jupyter-notebook": "left"
+	},
+	"security.workspace.trust.untrustedFiles": "open",
+	"terminal.integrated.defaultProfile.linux": "zsh",
+	"terminal.integrated.defaultProfile.windows": "zsh",
+	"terminal.integrated.profiles.linux": {
+		"bash": {
+			"icon": "terminal-bash",
+			"path": "bash"
+		},
+		"fish": {
+			"path": "fish"
+		},
+		"sh (2)": {
+			"path": "/usr/bin/sh"
+		},
+		"zsh": {
+			"path": "/usr/bin/zsh",
+			"args": ["-l", "-i"]
+		}
+	},
+	"typescript.preferences.useAliasesForRenames": false,
+	"workbench.editor.empty.hint": "hidden",
+	"terminal.integrated.env.windows": {},
+	"git.replaceTagsWhenPull": true,
+	"explorer.confirmPasteNative": false,
+	"terminal.integrated.enableMultiLinePasteWarning": "never",
+	"workbench.tips.enabled": false,
+	"workbench.activityBar.location": "top",
+	"workbench.colorTheme": "Adonis+ Eclipse",
+	"terminal.integrated.shellIntegration.enabled": true,
+	"terminal.integrated.defaultProfile.osx": "zsh",
+	"terminal.integrated.profiles.osx": {
+		"zsh": {
+			"path": "/bin/zsh",
+			"args": ["-l"]
+		}
+	},
+	"terminal.integrated.fontSize": 14,
+	"terminal.integrated.suggest.enabled": true,
+	"workbench.colorCustomizations": {},
+	"window.titleBarStyle": "custom",
+	"application.shellEnvironmentResolutionTimeout": 30,
+	"cSpell.userWords": [
+		"пинга",
+		"bybit",
+		"Coinexis",
+		"horz",
+		"ipfs",
+		"klines",
+		"nums",
+		"nuqs",
+		"Ohlc",
+		"Pcnt",
+		"sonner",
+		"Sparkline"
+	],
+	"gitlens.home.preview.enabled": false,
+	"window.commandCenter": false,
+	"workbench.editor.editorActionsLocation": "titleBar"
 }
