@@ -1,41 +1,9 @@
 {
-	"files.watcherExclude": {
-		"**/.git/**": true,
-		"**/node_modules/**": true,
-		"**/dist/**": true,
-		"**/build/**": true,
-		"**/.next/**": true,
-		"**/.turbo/**": true,
-		"**/.cache/**": true,
-		"**/.parcel-cache/**": true,
-		"**/.pnpm/**": true,
-		"**/coverage/**": true
-	},
-	"files.exclude": {
-		"**/.git": true,
-		"**/node_modules": true,
-		"**/dist": true,
-		"**/build": true,
-		"**/.next": true,
-		"**/.turbo": true,
-		"**/.cache": true,
-		"**/.parcel-cache": true,
-		"**/.pnpm": true,
-		"**/coverage": true
-	},
-	"search.exclude": {
-		"**/node_modules": true,
-		"**/dist": true,
-		"**/build": true,
-		"**/.next": true,
-		"**/.turbo": true,
-		"**/.cache": true,
-		"**/.parcel-cache": true,
-		"**/.pnpm": true,
-		"**/coverage": true
-	},
-	"eslint.enable": true,
-	"window.zoomLevel": -2,
+	//? OXC
+	"oxc.lint.run": "onType",
+	"oxc.trace.server": "off",
+	"eslint.enable": true, //? eslint
+	"window.zoomLevel": -1,
 	"breadcrumbs.enabled": true, //? Убираем хлебные крошки сверху редактора
 	"editor.minimap.enabled": false, //? Выключаем миникарту справа
 	"editor.semanticHighlighting.enabled": true, //? Используем дорогую семантическую подсветку
@@ -45,16 +13,18 @@
 	"editor.stickyScroll.enabled": false, //? Отключаем "прилипание" заголовков при скролле
 	"editor.codeLens": false, //? Не показываем дополнительные ссылки над кодом
 	"editor.inlayHints.enabled": "off", //? Отключаем маленькие типовые подсказки в коде
-	"editor.inlineSuggest.enabled": false, //? Отключаем inline-подсказки (ghost text)
+	"editor.inlineSuggest.enabled": true, //? Отключаем inline-подсказки (ghost text)
 	"editor.occurrencesHighlight": "multiFile", //? Не подсвечиваем все вхождения переменной
-	"editor.parameterHints.enabled": false, //? Убираем всплывающие подсказки параметров функций
-	"editor.hover.delay": 500, //? Делаем задержку ховеров (меньше всплывашек = быстрее)
+	"editor.parameterHints.enabled": true, //? Убираем всплывающие подсказки параметров функций
+	"editor.hover.delay": 200, //? Делаем задержку ховеров (меньше всплывашек = быстрее)
 	"editor.smoothScrolling": false, //? Выключаем плавный скроллинг (ускоряет рендер)
-	"editor.cursorSmoothCaretAnimation": "off", //? Убираем анимацию курсора
+	"editor.cursorSmoothCaretAnimation": "explicit", //? Убираем анимацию курсора
 	"workbench.list.smoothScrolling": false, //? Выключаем плавный скролл в списках (Explorer и т.д.)
-	"editor.glyphMargin": false, //? Не показываем слева пиктограммы (breakpoints, ошибки)
+	"editor.glyphMargin": true, //? Не показываем слева пиктограммы (breakpoints, ошибки)
 	"problems.decorations.enabled": true, //? Убираем подсветку ошибок на линейке справа
 	"workbench.editor.enablePreview": true, //? Открываем файлы во временной вкладке, чтобы не копились сотни
+	"typescript.preferences.importModuleSpecifier": "non-relative",
+	"javascript.preferences.importModuleSpecifier": "non-relative",
 	// --- Git/SCM
 	"git.autofetch": false, //? Не подтягиваем изменения из git в фоне
 	"git.decorations.enabled": true, //? Не показываем маркеры изменений в Explorer
@@ -64,7 +34,7 @@
 	"terminal.integrated.gpuAcceleration": "auto", //? Терминал без GPU — меньше нагрузка
 	"terminal.integrated.smoothScrolling": true, //? Терминал без плавного скролла — быстрее
 	// --- TypeScript/JS
-	"typescript.disableAutomaticTypeAcquisition": false, //? Не тянем тайпинги из сети автоматически (экономия)
+	"typescript.disableAutomaticTypeAcquisition": true, //? Не тянем тайпинги из сети автоматически (экономия)
 	"javascript.suggest.autoImports": true, //? Не ищем автоимпорты в node_modules (сильно нагружает)
 	"typescript.suggest.autoImports": true, //? То же самое для TS
 	"javascript.suggest.completeFunctionCalls": false, //? Не вставляем скобки при автодополнении функций
@@ -129,7 +99,6 @@
 		"source.fixAll.eslint": "explicit",
 		"source.organizeImports": "explicit"
 	},
-	"typescript.preferences.importModuleSpecifier": "non-relative",
 	"editor.renderWhitespace": "none",
 	"workbench.iconTheme": "material-icon-theme",
 	"workbench.startupEditor": "none",
@@ -184,7 +153,7 @@
 	},
 	"security.workspace.trust.untrustedFiles": "open",
 	"terminal.integrated.defaultProfile.linux": "zsh",
-	"terminal.integrated.defaultProfile.windows": "zsh",
+	"terminal.integrated.defaultProfile.windows": "Git Bash",
 	"terminal.integrated.profiles.linux": {
 		"bash": {
 			"icon": "terminal-bash",
@@ -198,7 +167,10 @@
 		},
 		"zsh": {
 			"path": "/usr/bin/zsh",
-			"args": ["-l", "-i"]
+			"args": [
+				"-l",
+				"-i"
+			]
 		}
 	},
 	"typescript.preferences.useAliasesForRenames": false,
@@ -215,7 +187,9 @@
 	"terminal.integrated.profiles.osx": {
 		"zsh": {
 			"path": "/bin/zsh",
-			"args": ["-l"]
+			"args": [
+				"-l"
+			]
 		}
 	},
 	"terminal.integrated.fontSize": 14,
@@ -239,5 +213,7 @@
 	],
 	"gitlens.home.preview.enabled": false,
 	"window.commandCenter": false,
-	"workbench.editor.editorActionsLocation": "titleBar"
+	"workbench.editor.editorActionsLocation": "titleBar",
+	"biome.suggestInstallingGlobally": false,
+	"oxc.path.oxlint": "./node_modules/.bin/oxlint"
 }
